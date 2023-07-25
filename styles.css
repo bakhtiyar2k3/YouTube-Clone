@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+html{scroll-behavior: smooth;}
+body {
+  background-color: hsl(0, 0%, 7%);
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 7%);
+  height: 55.99px;
+  position: sticky;
+  top: 0%;
+}
+.top div {
+  display: flex;
+}
+.youtubeLogo img {
+  width: 3rem;
+}
+.youtubeLogo h5 {
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: -2px;
+  font-weight: 500;
+}
+
+.youtubeLogo {
+  align-items: center;
+}
+.youtubeLogo img {
+  padding: 0.2rem;
+}
+.logo {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.toggle img {
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  margin: 0.1rem 2rem;
+  filter: invert(0.5);
+}
+.input input {
+  margin: 1rem 0;
+  border: 1px solid rgb(44, 44, 44);
+  width: 50rem;
+  height: 3rem;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  align-items: center;
+  background-color: hsl(0, 0%, 7%);
+  text-align: center;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  padding: 0.5rem 1.5rem;
+  /* border: 1px solid red; */
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  border: 1px solid rgb(44, 44, 44);
+  background-color: #343434;
+}
+.input {
+  align-items: center;
+}
+.input input:focus {
+  outline: none;
+}
+.input input::placeholder {
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.searchIcon {
+  height: 2rem;
+  text-align: center;
+}
+.mic img {
+  filter: invert(1);
+  width: 3rem;
+  padding: 0.7rem;
+}
+.mic {
+  background-color: #343434;
+  margin: 0 1rem;
+  border-radius: 100%;
+}
+.account {
+  align-items: center;
+  margin-right: 3rem;
+}
+.create img {
+  filter: invert(0.5);
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+}
+.notify img {
+  filter: invert(1);
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+}
+.myAcc img {
+  margin: 0.5rem;
+  filter: invert(1);
+  width: 3rem;
+  height: 3rem;
+}
+
+/* ========================= main styling ============================*/
+
+.main {
+  display: flex;
+}
+
+.left {
+  width: 18%;
+  background-color: hsl(0, 0%, 7%);
+}
+
+.right {
+  background-color: hsl(0, 0%, 7%);
+  height: 100vh;
+  width: 82%;
+  display: flex;
+  flex-direction: column;
+}
+
+.categories {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  position: sticky;
+  background-color: hsl(0, 0%, 7%);
+  top: 55.99px;
+}
+
+.categories a {
+  text-decoration: none;
+  border-color: rd;
+  padding: 0.6rem 1rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: #1f1f1f;
+  border-radius: 0.7rem;
+  margin: 0 0.5rem;
+}
+.categories a:hover {
+  transition: 0.5s;
+  background-color: #3e3e3e;
+}
+.categories a:first-child {
+  background-color: white;
+  color: black;
+  font-weight: 400;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.options i {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+.options:first-child {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1rem;
+  align-items: center;
+  margin: 0.5rem 2rem;
+  border-radius: 1rem;
+  background-color: #1f1f1f;
+  margin: 0rem 1rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  padding: 0.8rem 1rem;
+  align-items: center;
+  margin: 0rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.options:hover {
+  background-color: #1f1f1f;
+}
+.options p {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.line
+{
+    margin: 1rem;
+    width:85%;
+    height:1px;
+    border-bottom: .1rem solid white;
+}
+.feed {
+  /* border: 1px solid red; */
+  /* display: inline-block; */
+  display: flex;
+  /* width: 80vw; */
+  /* height: 100vh; */
+}
+.video {
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: fit-content;
+  align-self: flex-start;
+}
+/* .thumbnail{
+    padding:0;
+} */
+.thumbnail img {
+  width: 28rem;
+  border-radius: 1rem;
+  height: 16rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+}
+.info {
+  display: flex;
+  align-items: start;
+  /* justify-content: space-ar; */
+}
+.channelIcon {
+  display: flex;
+  cursor: pointer;
+}
+.channelIcon img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100%;
+}
+.text {
+  cursor: pointer;
+  margin: 0.5rem 0.8rem;
+}
+.text p {
+  color: rgb(191, 191, 191);
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
